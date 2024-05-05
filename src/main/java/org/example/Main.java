@@ -10,7 +10,7 @@ public class Main {
         Random random = new Random();
         int[] array = new int[10000];
         for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(100000); // Случайные числа от 0 до 99,999
+            array[i] = random.nextInt(100000);
         }
 
         long totalInsertionTime = 0;
@@ -23,7 +23,7 @@ public class Main {
             bTree.insert(array[i]);
             endTime = System.nanoTime();
             long elapsedTime = endTime - startTime;
-            totalInsertionTime += elapsedTime; // Суммируем время
+            totalInsertionTime += elapsedTime;
             insertionCount++;
         }
 
@@ -59,7 +59,7 @@ public class Main {
             bTree.delete(array[index]);
             endTime = System.nanoTime();
             long elapsedTime = endTime - startTime;
-            totalDeletionTime += elapsedTime; // Суммируем время
+            totalDeletionTime += elapsedTime;
             deletionCount++;
         }
 
