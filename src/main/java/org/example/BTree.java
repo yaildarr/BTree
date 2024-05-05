@@ -8,7 +8,7 @@ class BTree {
     private static class Node {
         int n; // Количество ключей
         int[] keys; // Ключи
-        Node[] children; // Дочерние узлы
+        Node[] children; // Дочерние
         boolean isLeaf; // Листовой узел или нет
 
         Node(boolean isLeaf) {
